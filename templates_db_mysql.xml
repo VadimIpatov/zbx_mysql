@@ -32,7 +32,7 @@
                 </macro>
                 <macro>
                     <macro>{$MYSQL_PORT}</macro>
-                    <value>0</value>
+                    <value>3306</value>
                 </macro>
                 <macro>
                     <macro>{$MYSQL_USER}</macro>

@@ -38,4 +38,7 @@ UserParameter=mysql.is_alive,/usr/bin/mysqladmin ping | grep -c alive
 
 * It's recommended to disable SELinux (or configure it)
 * Import "templates_db_mysql.xml" into zabbix as template
-* Create host objects and link with this template.
+* Create host objects and link with this template
+* Provide database user credentials by using host-level macroses: {$MYSQL_USER} and {$MYSQL_PASSWORD}. Default: zabbix with empty password.
+* You can also configure MySQL port ({$MYSQL_PORT}, default: 3306) and connection timeout ({$MYSQL_CONN_TIMEOUT}, default: 0) if you want.
+
