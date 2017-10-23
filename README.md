@@ -35,6 +35,7 @@ UserParameter=mysql.query[*],MYSQL_PWD=$3 /usr/bin/mysql -u$2 -h 127.0.0.1 -P$4 
 UserParameter=mysql.is_alive,/usr/bin/mysqladmin ping | grep -c alive
 ```
 
+* Restart zabbix_agent
 * It's recommended to disable SELinux (or configure it)
 * Import "templates_db_mysql.xml" into zabbix as template
 * Create host objects and link with this template
